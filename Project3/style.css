@@ -312,7 +312,19 @@ footer a:hover {
     /* End our business */
 
     /* news */
+    #news .col-md-3 {
+        padding-left: 0;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
 
+    #news :last-child {
+        padding-right: 0;
+    }
+
+    #news .row {
+        justify-content: space-between;
+    }
 
     /* end news */
 
@@ -469,14 +481,12 @@ footer a:hover {
          margin-left: 0;
      }
  
-     /* #news .col-md-12 {
-         padding-left: 0;
+    #news .col-md-3 {
+        padding-left: 0;
+        flex: 0 0 30%;
+        max-width: 30%;
      }
-     #news .col-md-3 {
-         padding-left: 0;
-         flex: 0 0 30%;
-         max-width: 30%;
-     } */
+
      /* END NEWS */
  
      /* CONTACTS */
@@ -665,6 +675,13 @@ footer a:hover {
         color: black;
         font-size: 1.5rem;
     }
+
+    #news .col-md-3 {
+        padding-left: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .card .card-title {
         font-size: 2.1rem;
     }
