@@ -466,10 +466,10 @@ footer a:hover {
         height: 80%;
         overflow: hidden;
     }
-/* 
+
     .nav-search {
         margin-right: 3rem;
-    } */
+    }
 
     header .fas {
         font-size: 0.8rem;
@@ -600,9 +600,15 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
+    article {
+        width: 50%;
+        margin-left:25%;
+    }
     /* NAV */
     .navbar {
         height: 3rem;
+        padding-left: 10%;
+        padding-right: 0;
     }
     .nav-search {
         margin-right: 3rem;
@@ -611,9 +617,45 @@ footer a:hover {
         font-size: 0.8rem;
         color:rgba(255,255,255,.5);
     }
-
-    
     /* End NAVs */
+
+    /* About us */
+    #img-right {
+        width: 100%;
+        background-position: left center;
+        background-size: auto 100%;
+    }
+
+    /* End about us */
+
+    /* our Business */
+    /* div#floatElement.container {
+        margin-top: 3rem;
+        margin-left: 3rem;
+    } */
+
+    #img-right img {
+        height: 3rem;
+        width: auto;
+    }
+
+    #ourBusiness h1 {
+        font-size: 1.5rem !important;
+        margin-bottom: 3rem;
+    }
+
+    #ourBusiness h2 {
+        font-size: 2rem !important;
+    }
+
+    #ourBusiness p {
+        font-size: 1rem !important;
+ 
+    }
+    img#hidden {
+        display: none;
+    }
+    /* End our business */
 }
 /*============ BOOTSTRAP BREAK POINTS:
 
