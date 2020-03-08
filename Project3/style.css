@@ -347,14 +347,14 @@ footer a:hover {
          margin-left: 0;
      }
  
-     #news .col-md-12 {
+     /* #news .col-md-12 {
          padding-left: 0;
      }
      #news .col-md-3 {
          padding-left: 0;
          flex: 0 0 30%;
          max-width: 30%;
-     }
+     } */
      /* END NEWS */
  
      /* CONTACTS */
@@ -553,7 +553,7 @@ footer a:hover {
         width: auto;
     }
 
-    #ourBusiness div.col-md-1 {
+    * #ourBusiness div.col-md-1 {
         width: auto;
         padding-top: 5rem;
     }
@@ -584,6 +584,15 @@ footer a:hover {
     /* End Our Business */
 
     /* News */
+
+    article#news {
+        width: 100%;
+    }
+
+    div#news.container {
+        padding: 0;
+    }
+
     #news a{
         color: black;
         font-size: 1.5rem;
@@ -602,20 +611,28 @@ footer a:hover {
     /* End News */
 
     /* Contacts */
+    article#contact {
+        width: 100%;
+    }
+
+    div#contact.container {
+        padding: 0;
+    }
+
    #contact div.col-md {
        margin-bottom: 1rem;
    }
 
    div.textareaF {
-       padding-left: 0;
-       padding-right: 0;
-       width: 105%;
+       padding-left: 5 !important;
+       padding-right: 0 !important;
+       box-sizing: border-box;
 
    }
 
    textarea#contactForm {
-       width: 100%;
-        padding-left: 0;
+       width: 103%;
+       padding-left: 0;
        margin: auto;
    }
    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -633,6 +650,10 @@ footer a:hover {
     /* End Contactacs */
 
     /* FOOTER */
+    footer div.container {
+        padding-left: 0;
+    }
+
     footer h2 {
         font-size: 2rem;
     }
