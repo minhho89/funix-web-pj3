@@ -1,0 +1,635 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    box-sizing: content-box;
+}
+
+/* Sửa lỗi hiển thị phần trắng bên phải page */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+/* End--Sửa lỗi hiển thị phần trắng bên phải page */
+
+article {
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}
+
+header {
+    margin: auto;  
+}
+
+.vietHoa {
+    text-transform: uppercase;
+}
+img {
+    width: 100%;
+}
+h1 {
+    font-size: 1rem !important;
+    font-weight: normal;
+    margin-left: 40px;
+    position: relative;
+
+}
+ 
+h1::before {
+    content: "";
+    background-color: #0072d3;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    display: flex;
+    left: -40px;
+    top: 50%;
+    margin-left: 0;
+}
+
+/* Navigation */
+.navbar {
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.active a {
+    color: #FFB400 !important;
+}
+
+/* End Navigation */
+
+/* Hero Image */
+
+.hero-image {
+    display: block;
+    overflow: hidden;
+}
+
+/* End Hero Image */
+
+/* About us */
+
+#about-us__h1 {
+    text-transform: uppercase;
+}
+
+#about-us__big-text {
+    font-size: 1.2rem;
+}
+
+/* End About Us */
+
+/* OUR BUSINESS */
+.ourBusiness row {
+    margin: 0;
+}
+
+.padding0 {
+    padding: 0 !important;
+}
+
+div#ourBusinessRow.row {
+    position: relative;
+}
+
+div#floatElement.container {
+    position: absolute;
+    padding: 0;
+    color: white;
+    margin-top: 2.5rem;
+}
+
+.our-buisness_text-float h1::before {
+    background-color: white;
+}
+
+.our-buisness_text-float h1{
+    color: white
+}
+
+#img-right {
+    background-image: url(Image/img-3-right.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#img-right img {
+    border-radius: 50%;
+    height: 2rem;
+    width: auto;
+}
+
+#ourBusiness div.col-md-1 {
+    padding: 0;
+    padding-top: 0.5rem;
+}
+
+#ourBusiness div.col-md-10 {
+    padding-left: 0rem;
+    width: 90%;
+}
+
+img#hidden {
+    display: none;
+}
+
+#ourBusiness div h2 {
+    font-size: 1rem;
+}
+
+#ourBusiness div p {
+    font-size: 0.7rem;
+}
+
+/* END BUSINESS */
+
+
+/* CONTACT */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 0.8rem;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 0.8rem;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 0.8rem;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 0.8rem;
+  }
+textarea {
+    width: 100%;
+    border: 1px solid #ced4da;
+}
+
+.textareaF {
+    margin-top: 1rem;
+}
+
+textarea::placeholder {
+    padding-left: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+.btn-warning {
+    color: white !important;
+    margin-bottom: 2rem;
+}
+/* END CONTACT */
+
+/* FOOTER */
+
+hr.socket {
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 3rem;
+ }
+ 
+footer {
+    background-color: #1b1919;
+    color: #b8b8b8;
+    padding-top: 3rem;
+}
+
+footer h2 {
+    color: #F1FDFC;
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer a:visited, a:link {
+    color: #b8b8b8;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+.footer-grid {
+    position: relative;
+}
+
+.footer-form {
+    border-bottom: 0.2rem solid #666b71;
+    border-radius: 20%;
+    position: relative;
+}
+
+.footer-form form input {
+    width: 100%;
+    background-color: transparent;
+    color: #797878;
+    border: none;
+    padding-bottom: 0.6rem;
+}
+
+.footer-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    border-radius: 0.1rem;
+}
+
+
+/* END FOOTER */
+/* Media Query */
+
+@media (max-width: 576px) {
+    header {
+        width: 100%;
+    } 
+    
+    article {
+        width: 90%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+    .row {
+        margin: auto;
+    }
+    /* Navigation */
+ 
+    .bg-sm-white {
+        background-color: white!important;
+    }
+ 
+    .navbar-brand {
+        position: absolute;
+        left: 50% !important; 
+        margin-left: -20% !important;  /* 50% of your logo width */
+        display: block;
+        color: #007bff !important;
+        font-size: 2rem;
+    }
+
+    .nav-search {
+        position: absolute;
+        right: 1rem;
+    }
+    header .fas {
+        font-size: 1.5rem;
+        color: rgba(121, 120, 120, 1);
+    }
+    .navbar-toggler {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: white;
+        border-color: white;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(121, 120, 120, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        width: 3em;
+        height: 3em;
+    }
+
+    /* End Navigation */
+
+
+    /* about us */
+    #about-us__big-text {
+        font-size: 2rem;
+    }
+
+    /* end about us */
+
+    /* Our Business */
+    section .container-fluid {
+        padding: 0;
+    }
+    section .row {
+        margin:0;
+    }
+
+    #img-right {
+        height: 40rem;
+        background-position: center top;
+    }
+
+    div#floatElement.container {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    #img-right img {
+        height: 4rem;
+        width: auto;
+    }
+
+    #ourBusiness div.col-md-1 {
+        width: auto;
+        padding-top: 5rem;
+    }
+    
+    #ourBusiness div.col-md-10 {
+        padding-left: 4rem;
+        width: 50%;
+    }
+
+    #ourBusiness h1 {
+        font-size: 1.2rem !important;
+        margin-left: 50%;
+    }
+    
+    img#hidden {
+        display: none;
+    }
+    
+    #ourBusiness div h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    #ourBusiness div p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    /* End Our Business */
+
+    /* News */
+    #news a{
+        color: black;
+        font-size: 1.5rem;
+    }
+    .card .card-title {
+        font-size: 2.1rem;
+    }
+
+    .card .card-text {
+        font-size: 1rem;
+    }
+
+    div.card {
+        margin-bottom: 1rem;
+    }
+    /* End News */
+
+    /* Contacts */
+   #contact div.col-md {
+       margin-bottom: 1rem;
+   }
+
+   div.textareaF {
+       padding-left: 0;
+       padding-right: 0;
+       width: 105%;
+
+   }
+
+   textarea#contactForm {
+       width: 100%;
+        padding-left: 0;
+       margin: auto;
+   }
+   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 1.5rem;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 1.5rem;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 1.5rem;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 1.5rem;
+  }
+    /* End Contactacs */
+
+    /* FOOTER */
+    footer h2 {
+        font-size: 2rem;
+    }
+    footer p, strong {
+        font-size: 1rem;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    footer div.container-fluid {
+        padding: 0;
+    }
+
+    footer button {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .col-xs-9{
+        width: 80%;
+    }
+
+    .footer-last p {
+        font-size: 1.5rem;
+    }
+    /* END FOOTER */
+}
+
+@media (max-width: 992px) {
+   .navbar {
+       padding-left: 10%;
+       padding-right: 0;
+   }
+    
+    article {
+        width: 90%;
+        margin: auto;
+    }
+
+    #navbarToggler {
+        margin-right: 0;
+    }
+
+    .ourBusiness__pt-right {
+        display: block;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .nav-search {
+        margin-right: 3rem;
+    }
+
+    header .fas {
+        font-size: 0.8rem;
+        color:rgba(255,255,255,.5);
+    }
+    
+    /* ABout us */
+    article {
+        margin-top: 3rem;
+    }
+
+    #aboutUs div.col-md-6 {
+        padding-left:0;
+    }
+
+    #aboutUs p{
+        padding-right: 1.3rem;
+        font-size: 1rem;
+    }
+    #about-us__big-text {
+        font-size: 1.8rem !important;
+    }
+
+    #img-right {
+        height: 40rem;
+        background-position: left center;
+        background-size: auto 120%;
+    }
+
+    div#floatElement.container {
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    #img-right img {
+        height: 6rem;
+        width: auto;
+    }
+
+
+    #ourBusiness div.col-md-1 {
+        width: auto;
+    }
+    
+    #ourBusiness div.col-md-10 {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 3rem;
+    }
+
+    #ourBusiness h1 {
+        font-size: 2rem !important;
+ 
+    }
+
+    #ourBusiness h2 {
+        font-size: 3rem !important;
+    }
+
+    #ourBusiness p {
+        font-size: 1.5rem !important;
+ 
+    }
+    img#hidden {
+        display: none;
+    }
+  
+    /* End about us */
+
+    /* NEWS */
+    #news div.row {
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    #news .col-md-12 {
+        padding-left: 0;
+    }
+    #news .col-md-3 {
+        padding-left: 0;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    /* END NEWS */
+
+    /* CONTACTS */
+    #contact .col-lg {
+        margin-bottom: 1rem;
+    }
+    #contact textarea {
+        width: 105%;
+    }
+    /* END CONTACTS */
+
+    /* FOOTER */
+    footer h2 {
+        font-size: 2.5rem;
+    }
+    footer p, strong {
+        font-size: 1.5rem;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer div.container-fluid {
+        padding: 0;
+    }
+
+    footer button {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .col-xs-9{
+        width: 80%;
+    }
+
+    .footer-last p {
+        font-size: 1.5rem;
+    }
+
+    footer .footer-form {
+        width: 90%;
+    }
+    /* END FOOTER */
+}
+
+@media (min-width: 992px) {
+    /* NAV */
+    .navbar {
+        height: 3rem;
+    }
+    .nav-search {
+        margin-right: 3rem;
+    }
+    .nav-search {
+        font-size: 0.8rem;
+        color:rgba(255,255,255,.5);
+    }
+
+    
+    /* End NAVs */
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
