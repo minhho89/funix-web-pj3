@@ -248,8 +248,219 @@ footer a:hover {
 
 /* END FOOTER */
 /* Media Query */
-
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+    .navbar {
+        padding-left: 10%;
+        padding-right: 0;
+    }
+     
+     article {
+         width: 90%;
+         margin: auto;
+     }
+ 
+     #navbarToggler {
+         margin-right: 0;
+     }
+ 
+     .ourBusiness__pt-right {
+         display: block;
+         height: 80%;
+         overflow: hidden;
+     }
+ 
+     .nav-search {
+         margin-right: 3rem;
+     }
+ 
+     header .fas {
+         font-size: 0.8rem;
+         color:rgba(255,255,255,.5);
+     }
+     
+     /* ABout us */
+     article {
+         margin-top: 3rem;
+     }
+ 
+     #aboutUs div.col-md-6 {
+         padding-left:0;
+     }
+ 
+     #aboutUs p{
+         padding-right: 1.3rem;
+         font-size: 1rem;
+     }
+     #about-us__big-text {
+         font-size: 1.8rem !important;
+     }
+ 
+     #img-right {
+         height: 40rem;
+         background-position: left center;
+         background-size: auto 120%;
+     }
+ 
+     div#floatElement.container {
+         margin-top: 3rem;
+         margin-left: 3rem;
+     }
+ 
+     #img-right img {
+         height: 6rem;
+         width: auto;
+     }
+ 
+ 
+     #ourBusiness div.col-md-1 {
+         width: auto;
+     }
+     
+     #ourBusiness div.col-md-10 {
+         width: 100%;
+         padding-right: 0;
+         padding-left: 3rem;
+     }
+ 
+     #ourBusiness h1 {
+         font-size: 2rem !important;
+  
+     }
+ 
+     #ourBusiness h2 {
+         font-size: 3rem !important;
+     }
+ 
+     #ourBusiness p {
+         font-size: 1.5rem !important;
+  
+     }
+     img#hidden {
+         display: none;
+     }
+   
+     /* End about us */
+ 
+     /* NEWS */
+     #news div.row {
+         justify-content: space-between;
+         margin-left: 0;
+     }
+ 
+     #news .col-md-12 {
+         padding-left: 0;
+     }
+     #news .col-md-3 {
+         padding-left: 0;
+         flex: 0 0 30%;
+         max-width: 30%;
+     }
+     /* END NEWS */
+ 
+     /* CONTACTS */
+     #contact .col-lg {
+         margin-bottom: 1rem;
+     }
+     #contact textarea {
+         width: 105%;
+     }
+     /* END CONTACTS */
+ 
+     /* FOOTER */
+     footer h2 {
+         font-size: 2.5rem;
+     }
+     footer p, strong {
+         font-size: 1.5rem;
+     }
+ 
+     footer ul {
+         padding: 0;
+     }
+ 
+     footer div.container-fluid {
+         padding: 0;
+     }
+ 
+     footer button {
+         padding: 0;
+         margin: 0;
+     }
+ 
+     footer .col-xs-9{
+         width: 80%;
+     }
+ 
+     .footer-last p {
+         font-size: 1.5rem;
+     }
+ 
+     footer .footer-form {
+         width: 90%;
+     }
+     /* END FOOTER */
+ }
+ 
+ @media (min-width: 993px) {
+     article {
+         width: 50%;
+         margin-left:25%;
+     }
+     /* NAV */
+     .navbar {
+         height: 3rem;
+         padding-left: 10%;
+         padding-right: 0;
+     }
+     .nav-search {
+         margin-right: 3rem;
+     }
+     .nav-search {
+         font-size: 0.8rem;
+         color:rgba(255,255,255,.5);
+     }
+     /* End NAVs */
+ 
+     /* About us */
+     #img-right {
+         width: 100%;
+         background-position: left center;
+         background-size: auto 100%;
+     }
+ 
+     /* End about us */
+ 
+     /* our Business */
+     /* div#floatElement.container {
+         margin-top: 3rem;
+         margin-left: 3rem;
+     } */
+ 
+     #img-right img {
+         height: 3rem;
+         width: auto;
+     }
+ 
+     #ourBusiness h1 {
+         font-size: 1.5rem !important;
+         margin-bottom: 3rem;
+     }
+ 
+     #ourBusiness h2 {
+         font-size: 2rem !important;
+     }
+ 
+     #ourBusiness p {
+         font-size: 1rem !important;
+  
+     }
+     img#hidden {
+         display: none;
+     }
+     /* End our business */
+ }
+ 
+@media (max-width: 575px) {
     header {
         width: 100%;
     } 
@@ -265,7 +476,10 @@ footer a:hover {
         margin: auto;
     }
     /* Navigation */
- 
+    .nav-link-mb {
+        color: black !important;
+    }
+
     .bg-sm-white {
         background-color: white!important;
     }
@@ -289,7 +503,7 @@ footer a:hover {
     }
     .navbar-toggler {
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-left: 0.7rem;
     }
 
     .navbar-dark .navbar-toggler {
@@ -446,217 +660,7 @@ footer a:hover {
     /* END FOOTER */
 }
 
-@media (max-width: 992px) {
-   .navbar {
-       padding-left: 10%;
-       padding-right: 0;
-   }
-    
-    article {
-        width: 90%;
-        margin: auto;
-    }
 
-    #navbarToggler {
-        margin-right: 0;
-    }
-
-    .ourBusiness__pt-right {
-        display: block;
-        height: 80%;
-        overflow: hidden;
-    }
-
-    .nav-search {
-        margin-right: 3rem;
-    }
-
-    header .fas {
-        font-size: 0.8rem;
-        color:rgba(255,255,255,.5);
-    }
-    
-    /* ABout us */
-    article {
-        margin-top: 3rem;
-    }
-
-    #aboutUs div.col-md-6 {
-        padding-left:0;
-    }
-
-    #aboutUs p{
-        padding-right: 1.3rem;
-        font-size: 1rem;
-    }
-    #about-us__big-text {
-        font-size: 1.8rem !important;
-    }
-
-    #img-right {
-        height: 40rem;
-        background-position: left center;
-        background-size: auto 120%;
-    }
-
-    div#floatElement.container {
-        margin-top: 3rem;
-        margin-left: 3rem;
-    }
-
-    #img-right img {
-        height: 6rem;
-        width: auto;
-    }
-
-
-    #ourBusiness div.col-md-1 {
-        width: auto;
-    }
-    
-    #ourBusiness div.col-md-10 {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 3rem;
-    }
-
-    #ourBusiness h1 {
-        font-size: 2rem !important;
- 
-    }
-
-    #ourBusiness h2 {
-        font-size: 3rem !important;
-    }
-
-    #ourBusiness p {
-        font-size: 1.5rem !important;
- 
-    }
-    img#hidden {
-        display: none;
-    }
-  
-    /* End about us */
-
-    /* NEWS */
-    #news div.row {
-        justify-content: space-between;
-        margin-left: 0;
-    }
-
-    #news .col-md-12 {
-        padding-left: 0;
-    }
-    #news .col-md-3 {
-        padding-left: 0;
-        flex: 0 0 30%;
-        max-width: 30%;
-    }
-    /* END NEWS */
-
-    /* CONTACTS */
-    #contact .col-lg {
-        margin-bottom: 1rem;
-    }
-    #contact textarea {
-        width: 105%;
-    }
-    /* END CONTACTS */
-
-    /* FOOTER */
-    footer h2 {
-        font-size: 2.5rem;
-    }
-    footer p, strong {
-        font-size: 1.5rem;
-    }
-
-    footer ul {
-        padding: 0;
-    }
-
-    footer div.container-fluid {
-        padding: 0;
-    }
-
-    footer button {
-        padding: 0;
-        margin: 0;
-    }
-
-    footer .col-xs-9{
-        width: 80%;
-    }
-
-    .footer-last p {
-        font-size: 1.5rem;
-    }
-
-    footer .footer-form {
-        width: 90%;
-    }
-    /* END FOOTER */
-}
-
-@media (min-width: 992px) {
-    article {
-        width: 50%;
-        margin-left:25%;
-    }
-    /* NAV */
-    .navbar {
-        height: 3rem;
-        padding-left: 10%;
-        padding-right: 0;
-    }
-    .nav-search {
-        margin-right: 3rem;
-    }
-    .nav-search {
-        font-size: 0.8rem;
-        color:rgba(255,255,255,.5);
-    }
-    /* End NAVs */
-
-    /* About us */
-    #img-right {
-        width: 100%;
-        background-position: left center;
-        background-size: auto 100%;
-    }
-
-    /* End about us */
-
-    /* our Business */
-    /* div#floatElement.container {
-        margin-top: 3rem;
-        margin-left: 3rem;
-    } */
-
-    #img-right img {
-        height: 3rem;
-        width: auto;
-    }
-
-    #ourBusiness h1 {
-        font-size: 1.5rem !important;
-        margin-bottom: 3rem;
-    }
-
-    #ourBusiness h2 {
-        font-size: 2rem !important;
-    }
-
-    #ourBusiness p {
-        font-size: 1rem !important;
- 
-    }
-    img#hidden {
-        display: none;
-    }
-    /* End our business */
-}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
