@@ -467,8 +467,12 @@ footer a:hover {
     
     article {
         width: 90%;
+        margin-bottom: 5rem;
     }
 
+    .about-us {
+        padding-left: 0!important;
+    }
     p {
         font-size: 1.5rem;
     }
@@ -536,12 +540,11 @@ footer a:hover {
     }
 
     #img-right {
-        height: 40rem;
+        height: 45rem;
         background-position: center top;
     }
 
     div#floatElement.container {
-        margin-top: 3rem;
         margin-left: 1rem;
     }
 
@@ -557,12 +560,12 @@ footer a:hover {
     
     #ourBusiness div.col-md-10 {
         padding-left: 4rem;
-        width: 50%;
+        width: 60%;
     }
 
     #ourBusiness h1 {
         font-size: 1.2rem !important;
-        margin-left: 50%;
+        margin-left: 55%;
     }
     
     img#hidden {
@@ -570,12 +573,12 @@ footer a:hover {
     }
     
     #ourBusiness div h2 {
-        font-size: 2.5rem;
+        font-size: 1rem;
         text-align: center;
     }
     
     #ourBusiness div p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-align: center;
     }
     /* End Our Business */
